@@ -85,9 +85,36 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
+        {/* Creator & Placement Trainer Credit Section */}
+        <div className="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/60 mb-8 flex flex-col md:flex-row items-center justify-between gap-5">
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-400 flex items-center justify-center text-white font-black text-lg shadow-md ring-2 ring-emerald-500/30 shrink-0">
+              DJ
+            </div>
+            <div>
+              <div className="flex flex-wrap items-center gap-2">
+                <h4 className="text-white font-bold text-base tracking-tight">Deepak Joshi</h4>
+                <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 text-xs font-bold border border-emerald-500/30">
+                  Placement Trainer
+                </span>
+                <span className="text-[11px] text-slate-400 font-medium">Platform Creator & Mentor</span>
+              </div>
+              <p className="text-xs text-slate-300 mt-1 leading-relaxed">
+                Dedicated to empowering engineering students & Tier-3 college graduates across India with 100% verified, active, pedigree-bias-free software job opportunities.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 shrink-0 self-stretch md:self-auto justify-end border-t md:border-t-0 pt-3 md:pt-0 border-slate-700/50">
+            <div className="text-right">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-400 block">Student First Initiative</span>
+              <span className="text-xs text-slate-400">Zero Pedigree Bias • Zero Fake Roles</span>
+            </div>
+          </div>
+        </div>
+
         <div className="border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} FreshersDaily. All ATS and career links resolve directly to official portals.</p>
-          <p className="mt-2 sm:mt-0">Strictly no staffing agencies • Zero pay-to-join schemes</p>
+          <p>© {new Date().getFullYear()} FreshersDaily • Created & Curated by <strong className="text-slate-200 font-semibold">Deepak Joshi (Placement Trainer)</strong>.</p>
+          <p className="mt-2 sm:mt-0">Strictly no staffing agencies • Direct official careers portal links only</p>
         </div>
       </div>
     </footer>

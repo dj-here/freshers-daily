@@ -121,6 +121,26 @@ export default function HowWeVerifyPage() {
             </div>
           ))}
         </div>
+
+        {/* Creator & Mission Section */}
+        <div className="mt-12 bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
+            <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center text-white font-extrabold text-2xl shadow-md shrink-0">
+              DJ
+            </div>
+            <div className="flex-1">
+              <div className="flex flex-wrap items-center gap-2 mb-1">
+                <h3 className="text-xl font-extrabold text-slate-900">Deepak Joshi</h3>
+                <span className="px-3 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold">
+                  Placement Trainer & Creator
+                </span>
+              </div>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                As a Placement Trainer, Deepak Joshi created FreshersDaily to solve the biggest challenges faced by engineering freshers and Tier-3 college students in India: fake job listings, expired application links, hidden experience requirements, and college-pedigree bias. Every opening on this platform is verified to ensure equal opportunity and direct access to genuine software careers.
+              </p>
+            </div>
+          </div>
+        </div>
       </main>
 
       <Footer />
