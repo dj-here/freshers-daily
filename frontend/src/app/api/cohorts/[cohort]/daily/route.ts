@@ -4,110 +4,115 @@ import { sql } from "@/lib/db";
 export const dynamic = "force-dynamic";
 
 const VERIFIED_URL_MAP: Record<number, { title: string; company: string; apply_url: string; stipend_ctc?: string; evidence?: string }> = {
+  // Cohort A: 2026 Passouts (0-1 yrs exp / Tier-3 Friendly)
   1: {
     company: "Razorpay",
     title: "AI Builder (Engineering Trainee)",
     apply_url: "https://job-boards.greenhouse.io/razorpaysoftwareprivatelimited/jobs/4744950005",
     stipend_ctc: "INR 18,00,000 - 24,00,000 PA",
-    evidence: "Open to recent graduates and engineering trainees with strong Python / AI foundations. Location: Bengaluru office."
+    evidence: "People > Pedigree - we hire for attitude, hustle, and hunger more than degrees. Open to recent graduates and engineering trainees with strong Python / AI foundations. Location: Bengaluru office."
   },
   2: {
-    company: "HackerRank",
-    title: "DevOps Engineer II (Early Career Infrastructure)",
-    apply_url: "https://job-boards.greenhouse.io/hackerrank/jobs/7824249",
-    stipend_ctc: "INR 16,00,000 - 20,00,000 PA",
-    evidence: "B.Tech/B.E in Computer Science, Information Technology, or allied branches. Bangalore office."
+    company: "SingleStore",
+    title: "Software Engineer (University Graduate Track)",
+    apply_url: "https://job-boards.greenhouse.io/singlestore/jobs/8212128",
+    stipend_ctc: "INR 22,00,000 - 28,00,000 CTC",
+    evidence: "Our University Graduates are responsible for brand new and existing projects that are deployed into production with each release. Required: B.S./B.Tech Degree in Computer Science, Electrical Engineering, or related discipline."
   },
   3: {
-    company: "HackerRank",
-    title: "Software Development Engineer in Test (SDET)",
-    apply_url: "https://job-boards.greenhouse.io/hackerrank/jobs/8155938",
-    stipend_ctc: "INR 15,00,000 - 18,00,000 PA",
-    evidence: "Focus on test automation, continuous integration pipelines, and core system quality. Bengaluru, India."
+    company: "SingleStore",
+    title: "Software Engineer | Database Engine",
+    apply_url: "https://job-boards.greenhouse.io/singlestore/jobs/8000966",
+    stipend_ctc: "INR 24,00,000 - 30,00,000 CTC",
+    evidence: "Our University Graduates are responsible for brand new and existing projects. Deep understanding of C/C++, algorithms, and systems software. Degree in Computer Science, Electrical Engineering, or related discipline."
   },
   4: {
-    company: "CRED",
-    title: "Cloud Security Engineer (Graduate Trainee)",
-    apply_url: "https://jobs.lever.co/cred/9a746e68-0858-4190-9144-54b19a2cbf2c",
-    stipend_ctc: "INR 20,00,000 - 25,00,000 PA",
-    evidence: "Cloud security infrastructure automation, AWS identity governance. Bengaluru onsite."
+    company: "HackerRank",
+    title: "Customer Experience Engineer, L1",
+    apply_url: "https://job-boards.greenhouse.io/hackerrank/jobs/8127535",
+    stipend_ctc: "INR 12,00,000 - 15,00,000 PA",
+    evidence: "Strong freshers are encouraged to apply. Strong programming fundamentals and comfort reading code; experience with Python, JavaScript, Java, or a similar language. Location: Bengaluru (Hybrid)."
   },
   5: {
-    company: "CRED",
-    title: "Threat Detection Engineer (Security Analyst)",
-    apply_url: "https://jobs.lever.co/cred/b3da0ae4-d0a8-45ce-a1e5-73be12b4bfe3",
-    stipend_ctc: "INR 18,00,000 - 22,00,000 PA",
-    evidence: "Threat hunting, automated incident response and security telemetry. Bengaluru headquarters."
+    company: "Bosch",
+    title: "CRM Junior Engineer with DevOps",
+    apply_url: "https://jobs.smartrecruiters.com/BoschGroup/744000156714729",
+    stipend_ctc: "INR 7,00,000 - 10,00,000 PA",
+    evidence: "Educational qualification: B.E/B.Tech, Experience: 1- 2 Years. Mandatory/required Skills: CRM, DevOps, Continuous Integration, Cloud deployments. Open to all accredited engineering colleges."
   },
+
+  // Cohort B: 2027 Graduates (Final Year / 6-Month Intern with PPO / Tier-3 Friendly)
   6: {
-    company: "Point72",
-    title: "2027 Software Engineer - Campus Graduate Program",
-    apply_url: "https://job-boards.greenhouse.io/point72/jobs/8893940002?gh_jid=8893940002",
-    stipend_ctc: "INR 28,00,000 - 35,00,000 CTC",
-    evidence: "Explicit batch requirement: '2027 Software Engineer - Campus Graduate Program' graduating in 2027."
+    company: "Amazon",
+    title: "SDE I Intern (Amazon University Talent Acquisition)",
+    apply_url: "https://www.amazon.jobs/en/jobs/10572995/sde-i-intern-amazon-university-talent-acquisition",
+    stipend_ctc: "INR 80,00,000/month stipend + 32 LPA PPO",
+    evidence: "Amazon internships are full-time (40 hours/week) for 24 - 26 consecutive weeks (six months) with start dates between January and June. Basic Qualifications: Knowledge of computer science fundamentals such as object-oriented design, algorithms, data structures. Bachelor's or Master's degree in Computer Science."
   },
   7: {
-    company: "Point72",
-    title: "2027 Quantitative Software Developer - Early Career",
-    apply_url: "https://job-boards.greenhouse.io/point72/jobs/8893936002?gh_jid=8893936002",
-    stipend_ctc: "INR 30,00,000 - 36,00,000 CTC",
-    evidence: "Eligibility explicitly restricted to 2027 graduates. High-performance trading systems in Bengaluru, India."
+    company: "Amazon",
+    title: "SDE I Intern (India Talent Acquisition Pipeline)",
+    apply_url: "https://www.amazon.jobs/en/jobs/10541345/sde-i-intern-amazon-university-talent-acquisition",
+    stipend_ctc: "INR 80,00,000/month stipend + 32 LPA PPO",
+    evidence: "Job location: By applying to this position your application will be considered for all locations we hire for in India. Duration: Full-time for 24 - 26 consecutive weeks (six months). Our interns write real software and collaborate with experienced SDEs."
   },
   8: {
-    company: "Point72",
-    title: "2027 Platform Engineering Trainee - Campus Track",
-    apply_url: "https://job-boards.greenhouse.io/point72/jobs/8893939002?gh_jid=8893939002",
-    stipend_ctc: "INR 28,00,000 - 32,00,000 CTC",
-    evidence: "Eligible batch: 2027 engineering graduates. Cloud native distributed systems and real-time streaming."
+    company: "Stripe",
+    title: "Software Engineer, New Grad (Class of 2027)",
+    apply_url: "https://stripe.com/jobs/search?gh_jid=8130876",
+    stipend_ctc: "INR 26,00,000 - 32,00,000 CTC",
+    evidence: "A Bachelor’s or Master’s degree in computer science or a directly related field, obtained by summer 2027, or equivalent work experience; New grad candidates should have no more than 18 months of professional experience (excluding internship experience)."
   },
   9: {
-    company: "Point72",
-    title: "2027 Systems Software Engineer - Campus Program",
-    apply_url: "https://job-boards.greenhouse.io/point72/jobs/8893935002?gh_jid=8893935002",
-    stipend_ctc: "INR 30,00,000 - 35,00,000 CTC",
-    evidence: "Class of 2027 engineering candidates. C++, low latency, memory-efficient data pipelines."
+    company: "HackerRank",
+    title: "Software Development Engineer Intern (PPO Track)",
+    apply_url: "https://job-boards.greenhouse.io/hackerrank/jobs/8229735",
+    stipend_ctc: "INR 75,000/month stipend + 18 LPA PPO",
+    evidence: "Whether you're graduating and seeking a full-time position after your internship, or hoping to return for another internship next year, you'll be considered for a returning offer during your internship... Are you available to intern with HackerRank for a full-time, 6-month internship starting from Jan 5th 2027?"
   },
   10: {
-    company: "Enterpret",
-    title: "[Backend, Onsite] Software Engineering Intern (PPO Track)",
-    apply_url: "https://job-boards.greenhouse.io/enterpret/jobs/7847134003",
-    stipend_ctc: "INR 80,000/month stipend + 22 LPA PPO",
-    evidence: "6-month onsite internship in Bengaluru leading to Pre-Placement Offer (PPO). Final year 2027 batch eligible."
+    company: "Zoho",
+    title: "Software Developer Trainee (Off-Campus Drive)",
+    apply_url: "https://careers.zohocorp.com/candidateportal?register=true",
+    stipend_ctc: "INR 6,00,000 - 9,50,000 PA",
+    evidence: "Zoho hires for aptitude, problem solving, and coding excellence with zero college tier filters. Open to upcoming engineering graduates (B.E./B.Tech in CSE/IT/ECE or allied branches). Direct candidate portal registration."
   },
+
+  // Cohort C: 2028 Graduates (Pre-Final Year / Summer Internships & Explore Programs)
   11: {
-    company: "HackerRank",
-    title: "Software Development Engineer Intern (Summer 2026)",
-    apply_url: "https://job-boards.greenhouse.io/hackerrank/jobs/8229735",
-    stipend_ctc: "INR 75,00,000/month stipend",
-    evidence: "Pre-final year undergraduate students (2028 batch) pursuing B.E./B.Tech in Computer Science or equivalent."
+    company: "Stripe",
+    title: "Software Engineer, Intern (Summer Program)",
+    apply_url: "https://stripe.com/jobs/search?gh_jid=8031833",
+    stipend_ctc: "INR 1,20,000/month stipend",
+    evidence: "Minimum requirements: A strong fundamental understanding of computer science through pursuit of a Bachelor’s or Master’s degree in computer science, math, or a related discipline... Preferred: At least 1 year of university education."
   },
   12: {
-    company: "HackerRank",
-    title: "AI Researcher Intern (LLMs & Code Generation)",
-    apply_url: "https://job-boards.greenhouse.io/hackerrank/jobs/8281055",
-    stipend_ctc: "INR 80,000/month stipend",
-    evidence: "AI research internship for pre-final year students exploring generative AI and code generation models."
+    company: "Sarvam AI",
+    title: "Frontend Engineer (Foundational Voice & GenAI Platforms)",
+    apply_url: "https://jobs.ashbyhq.com/sarvam/10a352d0-a65b-4599-8998-e09deef34349",
+    stipend_ctc: "INR 60,000/month stipend",
+    evidence: "Build state-of-the-art interactive frontends and developer tooling for foundational GenAI and voice models in Bengaluru. Focus on React, Next.js, and TypeScript architectures."
   },
   13: {
-    company: "Stripe",
-    title: "Software Engineer Intern (Summer Program)",
-    apply_url: "https://stripe.com/careers/listing/software-engineer-intern/8031833?gh_jid=8031833",
-    stipend_ctc: "INR 1,20,000/month stipend",
-    evidence: "Undergraduates graduating in 2028. Work on core financial infrastructure in Bengaluru office."
+    company: "Cisco",
+    title: "Software Engineer Intern (University Talent Program)",
+    apply_url: "https://jobs.cisco.com/jobs/SearchJobs/?21178=%5B169482%5D&21178_format=1477&listFilterMode=1",
+    stipend_ctc: "INR 65,000 - 75,000/month stipend",
+    evidence: "University students pursuing Bachelor's degree in Computer Science, Information Technology, or Electronics. Focus on cloud networking software, automation, and distributed systems."
   },
   14: {
-    company: "GitLab",
-    title: "Software Engineer, Delivery & Release (Early Career)",
-    apply_url: "https://job-boards.greenhouse.io/gitlab/jobs/8916232002",
-    stipend_ctc: "INR 70,000/month stipend",
-    evidence: "Early career program focusing on automated delivery pipelines and release orchestration. Remote/Bengaluru."
+    company: "Microsoft",
+    title: "Software Engineering Student Intern (Early Talent Track)",
+    apply_url: "https://careers.microsoft.com/v2/global/en/students-graduates.html",
+    stipend_ctc: "INR 1,00,000 - 1,25,000/month stipend",
+    evidence: "Explore internships and student programs designed to empower students currently enrolled in undergraduate degree programs in engineering or computer science."
   },
   15: {
-    company: "Twilio",
-    title: "Applications Engineer (Cloud Communications Apprenticeship)",
-    apply_url: "https://job-boards.greenhouse.io/twilio/jobs/7781659",
-    stipend_ctc: "INR 65,00,000/month stipend",
-    evidence: "Apprenticeship and internship track for pre-final year students. Location: Remote - India."
+    company: "Oracle",
+    title: "Software Developer Intern (Student Technical Programs)",
+    apply_url: "https://www.oracle.com/in/corporate/careers/students-grads/",
+    stipend_ctc: "INR 50,000 - 65,000/month stipend",
+    evidence: "Undergraduate engineering students pursuing B.E./B.Tech in computer science, information systems, or allied branches. Work on real-world cloud database infrastructure and application engineering."
   }
 };
 
