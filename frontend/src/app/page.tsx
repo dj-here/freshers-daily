@@ -24,7 +24,10 @@ export default function HomePage() {
   const fetchDailyFeed = async (targetCohort: string) => {
     setLoading(true);
     try {
-      const res = await fetch(`${apiUrl}/cohorts/${targetCohort}/daily`);
+      const res = await fetch(`${apiUrl}/cohorts/${targetCohort}/daily?_t=${Date.now()}`, {
+        cache: "no-store",
+        headers: { "Pragma": "no-cache", "Cache-Control": "no-cache" }
+      });
       if (res.ok) {
         const json = await res.json();
         setData(json);
