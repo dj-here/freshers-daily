@@ -66,7 +66,34 @@ CLOSURE_KEYWORDS = [
     "posting is no longer active",
     "job not found",
     "404 not found",
-    "expired requisition"
+    "expired requisition",
+    "this job has been unposted",
+    "this position is closed",
+    "application deadline has passed",
+    "time is past"
+]
+
+COLLEGE_RESTRICTION_PATTERNS = [
+    r"\btier[- ]?1\s+(?:college|colleges|institute|institutes|university|universities|only)\b",
+    r"\bonly\s+(?:from\s+)?(?:iit|nit|iiit|bits)\b",
+    r"\b(?:iit|nit|iiit|bits)\s+only\b",
+    r"\b(?:iits|nits|iiits|bits)\s+(?:graduates|students|only)\b",
+    r"\biit\s+(?:bhu|bombay|delhi|madras|kanpur|kharagpur|roorkee|guwahati|hyderabad)\b",
+    r"\btop\s+(?:tier|10|15|20)\s+(?:engineering\s+)?(?:colleges?|institutes?)\b",
+    r"\bpremium\s+(?:institutes?|colleges?)\b",
+    r"\bpedigree\s+(?:institutes?|colleges?)\b",
+    r"\bselect\s+(?:your\s+)?college\s*:\s*(?:iit|nit)\b",
+    r"\bare\s+you\s+currently\s+studying\s+in\s+iit\b",
+]
+
+TIER3_POSITIVE_INDICATORS = [
+    r"people\s*>\s*pedigree",
+    r"zero\s*tier\s*filter",
+    r"any\s*recognized\s*(?:university|institute|college)",
+    r"attitude\s*(?:>|,|\band\b)\s*degrees?",
+    r"open\s*to\s*all\s*(?:engineering\s*)?colleges",
+    r"strong\s*freshers\s*are\s*encouraged",
+    r"pedigree\s*does\s*not\s*matter",
 ]
 
 class VerificationReport:
@@ -158,6 +185,20 @@ class JobVerifier:
             reason=scam_reason
         )
         if not scam_passed:
+            report.status = "rejected"
+            report.final_trust_score = 0.0
+            return report
+
+        # Stage 3b: Tier-3 College Friendliness (Anti-Pedigree Discrimination Filter)
+        t3_passed, t3_reason, t3_evidence = self._check_tier3_friendly(f"{title}\n{fetched_html}")
+        report.add_result(
+            check_name="tier3_friendly",
+            passed=t3_passed,
+            score=100.0 if t3_passed else 0.0,
+            reason=t3_reason,
+            evidence=t3_evidence
+        )
+        if not t3_passed:
             report.status = "rejected"
             report.final_trust_score = 0.0
             return report
@@ -306,3 +347,19 @@ class JobVerifier:
             if re.search(pattern, text_lower):
                 return False, f"Scam phrase detected: {pattern}"
         return True, "No scam indicators detected"
+
+    def _check_tier3_friendly(self, text: str) -> Tuple[bool, str, Optional[str]]:
+        text_lower = text.lower()
+        # Check positive anti-pedigree indicators first (e.g. "People > Pedigree", "zero tier filter")
+        for pos in TIER3_POSITIVE_INDICATORS:
+            if re.search(pos, text_lower):
+                return True, "Explicitly Tier-3 friendly and pedigree-free", None
+
+        # Check negative restriction patterns (IIT only, Tier-1 only, etc.)
+        for pattern in COLLEGE_RESTRICTION_PATTERNS:
+            m = re.search(pattern, text_lower)
+            if m:
+                matched_str = m.group(0)
+                return False, f"College tier restriction detected ('{matched_str}'); exclusive to Tier-1 / IIT / NIT.", matched_str
+
+        return True, "Open to all accredited universities and Tier-3 engineering colleges", None

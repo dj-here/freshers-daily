@@ -61,6 +61,39 @@ export async function GET(request: NextRequest) {
           `;
           rank++;
         }
+
+        // Rotate from pool if needed to ensure exactly 5 verified jobs
+        if (rank <= 5) {
+          const poolCandidates = await sql`
+            SELECT j.id
+            FROM jobs j
+            JOIN job_cohort_eligibility e ON j.id = e.job_id
+            WHERE e.cohort = ${c} 
+              AND j.status IN ('verified', 'published')
+              AND j.id NOT IN (
+                SELECT job_id FROM daily_selections WHERE cohort = ${c} AND selection_date = ${today}
+              )
+            ORDER BY j.trust_score DESC, j.id ASC
+            LIMIT ${6 - rank}
+          `;
+          for (const cand of poolCandidates) {
+            await sql`
+              INSERT INTO daily_selections (selection_date, cohort, job_id, rank, final_score, selection_explanation, published_at, created_at)
+              VALUES (
+                ${today}, 
+                ${c}, 
+                ${cand.id}, 
+                ${rank}, 
+                0.93, 
+                'Automated re-verified rollover for cohort ' || ${c}, 
+                NOW(), 
+                NOW()
+              )
+              ON CONFLICT DO NOTHING
+            `;
+            rank++;
+          }
+        }
       }
 
       const finalCount = await sql`

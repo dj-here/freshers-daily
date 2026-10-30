@@ -93,6 +93,11 @@ class DummyDeterministicLLM(BaseLLMService):
         max_exp = 1.0
         rejection_flags = []
 
+        # Tier-1 / IIT College Restriction check
+        if re.search(r"\b(only\s+(?:from\s+)?(?:iit|nit|iiit|bits)|(?:iit|nit|iiit|bits)\s+only|tier[- ]?1\s+(?:only|colleges?))\b", combined, re.IGNORECASE):
+            if not re.search(r"\b(people\s*>\s*pedigree|zero\s*tier)\b", combined, re.IGNORECASE):
+                rejection_flags.append("Restricted to Tier-1 / IIT colleges only; not open to general Tier-3 colleges")
+
         exp_match = re.search(r"(\d+)\s*(?:-|to|\+)\s*(\d+)?\s*(?:years?|yrs?)", combined, re.IGNORECASE)
         if exp_match:
             val1 = float(exp_match.group(1))

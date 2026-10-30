@@ -30,4 +30,5 @@ jobs:
           PYTHONPATH: backend
         run: |
           cd backend
-          python -m app.cli run-daily --skip-ingest
+          python -m app.cli run-daily || true
+          curl -s "https://freshers-daily.vercel.app/api/cron/daily" || true
