@@ -144,7 +144,41 @@ npm run dev
 # Accessible at http://localhost:3000
 ```
 
-### 4. Docker Compose Setup (Production)
+### 4. Live Cloud Deployment (Vercel + Git + Neon Serverless PostgreSQL)
+
+FreshersDaily is pre-architected to run 24/7 in the cloud with zero machine uptime required, supporting high-concurrency access via serverless edge routing and database connection pooling.
+
+```mermaid
+flowchart LR
+    User["Multi-User Traffic"] --> Vercel["Vercel Edge / CDN"]
+    Vercel --> Serverless["Next.js Serverless Routes (/api/*)"]
+    Cron["Vercel Cron (00:00 UTC / 05:30 IST)"] --> CronEndpoint["/api/cron/daily"]
+    CronEndpoint --> Neon[("Neon Serverless Cloud PostgreSQL\n(ep-noisy-night-b4i7llso-pooler)")]
+    Serverless --> Neon
+```
+
+#### Step 1: Push Codebase to GitHub
+Use the automated 1-click script:
+- In `freshers_daily/`: double-click or run `setup-github-and-vercel.bat`
+- Or from workspace root: double-click `setup-freshersdaily-github.bat`
+- Enter your GitHub repo URL (e.g. `https://github.com/dj-here/freshers-daily.git`). The script will commit and push the complete production platform to GitHub.
+
+#### Step 2: Deploy on Vercel
+1. Open [https://vercel.com/new](https://vercel.com/new) and click **Import** next to your repository.
+2. In **Root Directory**, click **Edit** and select `frontend`.
+3. In **Environment Variables**, add:
+   - `DATABASE_URL`: `postgresql://neondb_owner:npg_UPrjoK0VQcb6@ep-noisy-night-b4i7llso-pooler.c-6.us-east-2.aws.neon.tech/neondb?sslmode=require`
+   - `ADMIN_API_KEY`: `adminkey-dev-supersecret-freshersdaily-2026`
+4. Click **Deploy**.
+
+#### Step 3: 24/7 Automated Cloud Execution
+- **Zero Local Dependency:** The platform runs entirely in the cloud even when your personal computer is turned off.
+- **Automated Publishing Cron:** Vercel Cron automatically triggers `/api/cron/daily` at 00:00 UTC (05:30 IST) every morning to publish the 5 fresh daily selections for 2026, 2027, and 2028 cohorts.
+- **High Concurrency:** Database queries connect to the Neon connection pooler (`ep-noisy-night-b4i7llso-pooler`) using `@neondatabase/serverless`, handling concurrent users without hitting PostgreSQL connection limits.
+
+---
+
+### 5. Docker Compose Setup (Local Production)
 ```bash
 # From repository root
 docker compose up -d --build
