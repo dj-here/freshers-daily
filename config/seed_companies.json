@@ -1,0 +1,2031 @@
+[
+  {
+    "name": "Google",
+    "slug": "google",
+    "domain": "google.com",
+    "tier": "TIER_1",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "google",
+      "site": "External"
+    }
+  },
+  {
+    "name": "Microsoft",
+    "slug": "microsoft",
+    "domain": "microsoft.com",
+    "tier": "TIER_1",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "microsoft",
+      "site": "External"
+    }
+  },
+  {
+    "name": "Amazon",
+    "slug": "amazon",
+    "domain": "amazon.jobs",
+    "tier": "TIER_1",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.amazon.jobs/en/search.json"
+    }
+  },
+  {
+    "name": "Adobe",
+    "slug": "adobe",
+    "domain": "adobe.com",
+    "tier": "TIER_1",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "adobe",
+      "site": "external_experienced"
+    }
+  },
+  {
+    "name": "Cisco",
+    "slug": "cisco",
+    "domain": "cisco.com",
+    "tier": "TIER_1",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "cisco",
+      "site": "Cisco_Careers"
+    }
+  },
+  {
+    "name": "Salesforce",
+    "slug": "salesforce",
+    "domain": "salesforce.com",
+    "tier": "TIER_1",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "salesforce",
+      "site": "External_Career_Site"
+    }
+  },
+  {
+    "name": "Oracle",
+    "slug": "oracle",
+    "domain": "oracle.com",
+    "tier": "TIER_1",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://eeho.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions"
+    }
+  },
+  {
+    "name": "Atlassian",
+    "slug": "atlassian",
+    "domain": "atlassian.com",
+    "tier": "TIER_1",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "atlassian"
+    }
+  },
+  {
+    "name": "Uber",
+    "slug": "uber",
+    "domain": "uber.com",
+    "tier": "TIER_1",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "uber"
+    }
+  },
+  {
+    "name": "Intuit",
+    "slug": "intuit",
+    "domain": "intuit.com",
+    "tier": "TIER_1",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "intuit",
+      "site": "External"
+    }
+  },
+  {
+    "name": "Stripe",
+    "slug": "stripe",
+    "domain": "stripe.com",
+    "tier": "TIER_1",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "stripe"
+    }
+  },
+  {
+    "name": "Figma",
+    "slug": "figma",
+    "domain": "figma.com",
+    "tier": "TIER_1",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "figma"
+    }
+  },
+  {
+    "name": "Coinbase",
+    "slug": "coinbase",
+    "domain": "coinbase.com",
+    "tier": "TIER_1",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "coinbase"
+    }
+  },
+  {
+    "name": "Databricks",
+    "slug": "databricks",
+    "domain": "databricks.com",
+    "tier": "TIER_1",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "databricks"
+    }
+  },
+  {
+    "name": "Snowflake",
+    "slug": "snowflake",
+    "domain": "snowflake.com",
+    "tier": "TIER_1",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "snowflake"
+    }
+  },
+  {
+    "name": "Cloudflare",
+    "slug": "cloudflare",
+    "domain": "cloudflare.com",
+    "tier": "TIER_1",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "cloudflare"
+    }
+  },
+  {
+    "name": "Twilio",
+    "slug": "twilio",
+    "domain": "twilio.com",
+    "tier": "TIER_1",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "twilio"
+    }
+  },
+  {
+    "name": "Datadog",
+    "slug": "datadog",
+    "domain": "datadoghq.com",
+    "tier": "TIER_1",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "datadog"
+    }
+  },
+  {
+    "name": "GitLab",
+    "slug": "gitlab",
+    "domain": "gitlab.com",
+    "tier": "TIER_1",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "gitlab"
+    }
+  },
+  {
+    "name": "HashiCorp",
+    "slug": "hashicorp",
+    "domain": "hashicorp.com",
+    "tier": "TIER_1",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "hashicorp"
+    }
+  },
+  {
+    "name": "MongoDB",
+    "slug": "mongodb",
+    "domain": "mongodb.com",
+    "tier": "TIER_1",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "mongodb"
+    }
+  },
+  {
+    "name": "Elastic",
+    "slug": "elastic",
+    "domain": "elastic.co",
+    "tier": "TIER_1",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "elastic"
+    }
+  },
+  {
+    "name": "Okta",
+    "slug": "okta",
+    "domain": "okta.com",
+    "tier": "TIER_1",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "okta"
+    }
+  },
+  {
+    "name": "PayPal",
+    "slug": "paypal",
+    "domain": "paypal.com",
+    "tier": "TIER_1",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "paypal",
+      "site": "PayPal_Jobs"
+    }
+  },
+  {
+    "name": "Walmart Global Tech",
+    "slug": "walmart",
+    "domain": "walmart.com",
+    "tier": "TIER_1",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "walmart",
+      "site": "walmart_external"
+    }
+  },
+  {
+    "name": "Target India",
+    "slug": "target",
+    "domain": "target.com",
+    "tier": "TIER_1",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "target",
+      "site": "target_careers"
+    }
+  },
+  {
+    "name": "Qualcomm",
+    "slug": "qualcomm",
+    "domain": "qualcomm.com",
+    "tier": "TIER_1",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "qualcomm",
+      "site": "External"
+    }
+  },
+  {
+    "name": "NVIDIA",
+    "slug": "nvidia",
+    "domain": "nvidia.com",
+    "tier": "TIER_1",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "nvidia",
+      "site": "NVIDIAExternalCareerSite"
+    }
+  },
+  {
+    "name": "Intel",
+    "slug": "intel",
+    "domain": "intel.com",
+    "tier": "TIER_1",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "intel",
+      "site": "External"
+    }
+  },
+  {
+    "name": "AMD",
+    "slug": "amd",
+    "domain": "amd.com",
+    "tier": "TIER_1",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://careers.amd.com"
+    }
+  },
+  {
+    "name": "Texas Instruments",
+    "slug": "ti",
+    "domain": "ti.com",
+    "tier": "TIER_1",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "ti",
+      "site": "TI_Careers"
+    }
+  },
+  {
+    "name": "Goldman Sachs",
+    "slug": "goldmansachs",
+    "domain": "goldmansachs.com",
+    "tier": "TIER_1",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.goldmansachs.com/careers"
+    }
+  },
+  {
+    "name": "Morgan Stanley",
+    "slug": "morganstanley",
+    "domain": "morganstanley.com",
+    "tier": "TIER_1",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://morganstanley.tal.net"
+    }
+  },
+  {
+    "name": "JPMorgan Chase",
+    "slug": "jpmorgan",
+    "domain": "jpmorgan.com",
+    "tier": "TIER_1",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://jpmc.fa.oraclecloud.com"
+    }
+  },
+  {
+    "name": "Flipkart",
+    "slug": "flipkart",
+    "domain": "flipkart.com",
+    "tier": "TIER_1",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.flipkartcareers.com"
+    }
+  },
+  {
+    "name": "Swiggy",
+    "slug": "swiggy",
+    "domain": "swiggy.com",
+    "tier": "TIER_1",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://careers.swiggy.com"
+    }
+  },
+  {
+    "name": "Zomato",
+    "slug": "zomato",
+    "domain": "zomato.com",
+    "tier": "TIER_1",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.zomato.com/careers"
+    }
+  },
+  {
+    "name": "Razorpay",
+    "slug": "razorpay",
+    "domain": "razorpay.com",
+    "tier": "TIER_1",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "razorpaysoftwareprivatelimited"
+    }
+  },
+  {
+    "name": "PhonePe",
+    "slug": "phonepe",
+    "domain": "phonepe.com",
+    "tier": "TIER_1",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.phonepe.com/careers"
+    }
+  },
+  {
+    "name": "CRED",
+    "slug": "cred",
+    "domain": "cred.club",
+    "tier": "TIER_1",
+    "ats_type": "lever",
+    "config": {
+      "site": "cred"
+    }
+  },
+  {
+    "name": "Meesho",
+    "slug": "meesho",
+    "domain": "meesho.com",
+    "tier": "TIER_1",
+    "ats_type": "lever",
+    "config": {
+      "site": "meesho"
+    }
+  },
+  {
+    "name": "Zerodha",
+    "slug": "zerodha",
+    "domain": "zerodha.com",
+    "tier": "TIER_1",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://zerodha.com/careers"
+    }
+  },
+  {
+    "name": "Postman",
+    "slug": "postman",
+    "domain": "postman.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "postman"
+    }
+  },
+  {
+    "name": "BrowserStack",
+    "slug": "browserstack",
+    "domain": "browserstack.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "browserstack"
+    }
+  },
+  {
+    "name": "InMobi",
+    "slug": "inmobi",
+    "domain": "inmobi.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "inmobi"
+    }
+  },
+  {
+    "name": "Clevertap",
+    "slug": "clevertap",
+    "domain": "clevertap.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "clevertap"
+    }
+  },
+  {
+    "name": "Urban Company",
+    "slug": "urbancompany",
+    "domain": "urbancompany.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "urbancompany"
+    }
+  },
+  {
+    "name": "Pine Labs",
+    "slug": "pinelabs",
+    "domain": "pinelabs.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "pinelabs"
+    }
+  },
+  {
+    "name": "Zeta",
+    "slug": "zeta",
+    "domain": "zeta.tech",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "zeta"
+    }
+  },
+  {
+    "name": "Zepto",
+    "slug": "zepto",
+    "domain": "zepto.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "zepto"
+    }
+  },
+  {
+    "name": "Groww",
+    "slug": "groww",
+    "domain": "groww.in",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://groww.in/careers"
+    }
+  },
+  {
+    "name": "slice",
+    "slug": "slice",
+    "domain": "sliceit.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "sliceit"
+    }
+  },
+  {
+    "name": "Apna",
+    "slug": "apna",
+    "domain": "apna.co",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "apna"
+    }
+  },
+  {
+    "name": "Infra.Market",
+    "slug": "inframarket",
+    "domain": "infra.market",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "inframarket"
+    }
+  },
+  {
+    "name": "PhysicsWallah",
+    "slug": "physicswallah",
+    "domain": "pw.live",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "physicswallah"
+    }
+  },
+  {
+    "name": "Navi",
+    "slug": "navi",
+    "domain": "navi.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "navi"
+    }
+  },
+  {
+    "name": "Darwinbox",
+    "slug": "darwinbox",
+    "domain": "darwinbox.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "darwinbox"
+    }
+  },
+  {
+    "name": "Whatfix",
+    "slug": "whatfix",
+    "domain": "whatfix.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "whatfix"
+    }
+  },
+  {
+    "name": "Chargebee",
+    "slug": "chargebee",
+    "domain": "chargebee.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "chargebee"
+    }
+  },
+  {
+    "name": "Shiprocket",
+    "slug": "shiprocket",
+    "domain": "shiprocket.in",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "shiprocket"
+    }
+  },
+  {
+    "name": "MoEngage",
+    "slug": "moengage",
+    "domain": "moengage.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "moengage"
+    }
+  },
+  {
+    "name": "LeadSquared",
+    "slug": "leadsquared",
+    "domain": "leadsquared.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "leadsquared"
+    }
+  },
+  {
+    "name": "Turtlemint",
+    "slug": "turtlemint",
+    "domain": "turtlemint.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "turtlemint"
+    }
+  },
+  {
+    "name": "Khatabook",
+    "slug": "khatabook",
+    "domain": "khatabook.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "khatabook"
+    }
+  },
+  {
+    "name": "CoinDCX",
+    "slug": "coindcx",
+    "domain": "coindcx.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "coindcx"
+    }
+  },
+  {
+    "name": "BharatPe",
+    "slug": "bharatpe",
+    "domain": "bharatpe.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "bharatpe"
+    }
+  },
+  {
+    "name": "Porter",
+    "slug": "porter",
+    "domain": "porter.in",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "porter"
+    }
+  },
+  {
+    "name": "Shadowfax",
+    "slug": "shadowfax",
+    "domain": "shadowfax.in",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "shadowfax"
+    }
+  },
+  {
+    "name": "Rapido",
+    "slug": "rapido",
+    "domain": "rapido.bike",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "rapido"
+    }
+  },
+  {
+    "name": "Cars24",
+    "slug": "cars24",
+    "domain": "cars24.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "cars24"
+    }
+  },
+  {
+    "name": "Spinny",
+    "slug": "spinny",
+    "domain": "spinny.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "spinny"
+    }
+  },
+  {
+    "name": "Lenskart",
+    "slug": "lenskart",
+    "domain": "lenskart.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "lenskart"
+    }
+  },
+  {
+    "name": "Nykaa",
+    "slug": "nykaa",
+    "domain": "nykaa.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "nykaa"
+    }
+  },
+  {
+    "name": "Purplle",
+    "slug": "purplle",
+    "domain": "purplle.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "purplle"
+    }
+  },
+  {
+    "name": "FirstCry",
+    "slug": "firstcry",
+    "domain": "firstcry.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.firstcry.com/careers"
+    }
+  },
+  {
+    "name": "Livspace",
+    "slug": "livspace",
+    "domain": "livspace.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "livspace"
+    }
+  },
+  {
+    "name": "Unacademy",
+    "slug": "unacademy",
+    "domain": "unacademy.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "unacademy"
+    }
+  },
+  {
+    "name": "Eruditus",
+    "slug": "eruditus",
+    "domain": "eruditus.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "eruditus"
+    }
+  },
+  {
+    "name": "Simplilearn",
+    "slug": "simplilearn",
+    "domain": "simplilearn.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "simplilearn"
+    }
+  },
+  {
+    "name": "Scaler",
+    "slug": "scaler",
+    "domain": "scaler.com",
+    "tier": "TIER_2",
+    "ats_type": "lever",
+    "config": {
+      "site": "interviewbit"
+    }
+  },
+  {
+    "name": "Vercel",
+    "slug": "vercel",
+    "domain": "vercel.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "vercel"
+    }
+  },
+  {
+    "name": "Supabase",
+    "slug": "supabase",
+    "domain": "supabase.com",
+    "tier": "TIER_2",
+    "ats_type": "ashby",
+    "config": {
+      "job_board_name": "supabase"
+    }
+  },
+  {
+    "name": "Linear",
+    "slug": "linear",
+    "domain": "linear.app",
+    "tier": "TIER_2",
+    "ats_type": "ashby",
+    "config": {
+      "job_board_name": "linear"
+    }
+  },
+  {
+    "name": "Retool",
+    "slug": "retool",
+    "domain": "retool.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "retool"
+    }
+  },
+  {
+    "name": "Scale AI",
+    "slug": "scaleai",
+    "domain": "scale.com",
+    "tier": "TIER_2",
+    "ats_type": "ashby",
+    "config": {
+      "job_board_name": "scaleai"
+    }
+  },
+  {
+    "name": "Modal Labs",
+    "slug": "modal",
+    "domain": "modal.com",
+    "tier": "TIER_2",
+    "ats_type": "ashby",
+    "config": {
+      "job_board_name": "modal"
+    }
+  },
+  {
+    "name": "Perplexity AI",
+    "slug": "perplexity",
+    "domain": "perplexity.ai",
+    "tier": "TIER_2",
+    "ats_type": "ashby",
+    "config": {
+      "job_board_name": "perplexity"
+    }
+  },
+  {
+    "name": "ElevenLabs",
+    "slug": "elevenlabs",
+    "domain": "elevenlabs.io",
+    "tier": "TIER_2",
+    "ats_type": "ashby",
+    "config": {
+      "job_board_name": "elevenlabs"
+    }
+  },
+  {
+    "name": "Pinecone",
+    "slug": "pinecone",
+    "domain": "pinecone.io",
+    "tier": "TIER_2",
+    "ats_type": "ashby",
+    "config": {
+      "job_board_name": "pinecone"
+    }
+  },
+  {
+    "name": "Weaviate",
+    "slug": "weaviate",
+    "domain": "weaviate.io",
+    "tier": "TIER_2",
+    "ats_type": "ashby",
+    "config": {
+      "job_board_name": "weaviate"
+    }
+  },
+  {
+    "name": "Qdrant",
+    "slug": "qdrant",
+    "domain": "qdrant.tech",
+    "tier": "TIER_2",
+    "ats_type": "ashby",
+    "config": {
+      "job_board_name": "qdrant"
+    }
+  },
+  {
+    "name": "Hugging Face",
+    "slug": "huggingface",
+    "domain": "huggingface.co",
+    "tier": "TIER_2",
+    "ats_type": "ashby",
+    "config": {
+      "job_board_name": "huggingface"
+    }
+  },
+  {
+    "name": "ThoughtSpot",
+    "slug": "thoughtspot",
+    "domain": "thoughtspot.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "thoughtspot"
+    }
+  },
+  {
+    "name": "Rubrik",
+    "slug": "rubrik",
+    "domain": "rubrik.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "rubrik"
+    }
+  },
+  {
+    "name": "Cohesity",
+    "slug": "cohesity",
+    "domain": "cohesity.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "cohesity"
+    }
+  },
+  {
+    "name": "Nutanix",
+    "slug": "nutanix",
+    "domain": "nutanix.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "nutanix"
+    }
+  },
+  {
+    "name": "Pure Storage",
+    "slug": "purestorage",
+    "domain": "purestorage.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "purestorage"
+    }
+  },
+  {
+    "name": "Confluent",
+    "slug": "confluent",
+    "domain": "confluent.io",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "confluent"
+    }
+  },
+  {
+    "name": "Samsara",
+    "slug": "samsara",
+    "domain": "samsara.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "samsara"
+    }
+  },
+  {
+    "name": "Zendesk",
+    "slug": "zendesk",
+    "domain": "zendesk.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "zendesk"
+    }
+  },
+  {
+    "name": "Asana",
+    "slug": "asana",
+    "domain": "asana.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "asana"
+    }
+  },
+  {
+    "name": "Monday.com",
+    "slug": "monday",
+    "domain": "monday.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "mondaydotcom"
+    }
+  },
+  {
+    "name": "Canva",
+    "slug": "canva",
+    "domain": "canva.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "canva"
+    }
+  },
+  {
+    "name": "Miro",
+    "slug": "miro",
+    "domain": "miro.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "miro"
+    }
+  },
+  {
+    "name": "ClickUp",
+    "slug": "clickup",
+    "domain": "clickup.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "clickup"
+    }
+  },
+  {
+    "name": "Cockroach Labs",
+    "slug": "cockroachlabs",
+    "domain": "cockroachlabs.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "cockroachlabs"
+    }
+  },
+  {
+    "name": "SingleStore",
+    "slug": "singlestore",
+    "domain": "singlestore.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "singlestore"
+    }
+  },
+  {
+    "name": "Yugabyte",
+    "slug": "yugabyte",
+    "domain": "yugabyte.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "yugabyte"
+    }
+  },
+  {
+    "name": "Snyk",
+    "slug": "snyk",
+    "domain": "snyk.io",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "snyk"
+    }
+  },
+  {
+    "name": "Dynatrace",
+    "slug": "dynatrace",
+    "domain": "dynatrace.com",
+    "tier": "TIER_2",
+    "ats_type": "smartrecruiters",
+    "config": {
+      "company_id": "Dynatrace"
+    }
+  },
+  {
+    "name": "New Relic",
+    "slug": "newrelic",
+    "domain": "newrelic.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "newrelic"
+    }
+  },
+  {
+    "name": "Splunk",
+    "slug": "splunk",
+    "domain": "splunk.com",
+    "tier": "TIER_2",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "splunk",
+      "site": "External"
+    }
+  },
+  {
+    "name": "ServiceNow",
+    "slug": "servicenow",
+    "domain": "servicenow.com",
+    "tier": "TIER_2",
+    "ats_type": "smartrecruiters",
+    "config": {
+      "company_id": "ServiceNow"
+    }
+  },
+  {
+    "name": "Bosch India",
+    "slug": "bosch",
+    "domain": "bosch.in",
+    "tier": "TIER_2",
+    "ats_type": "smartrecruiters",
+    "config": {
+      "company_id": "BoschGroup"
+    }
+  },
+  {
+    "name": "Schneider Electric",
+    "slug": "schneider",
+    "domain": "se.com",
+    "tier": "TIER_2",
+    "ats_type": "smartrecruiters",
+    "config": {
+      "company_id": "SchneiderElectric"
+    }
+  },
+  {
+    "name": "Publicis Sapient",
+    "slug": "publicis-sapient",
+    "domain": "publicissapient.com",
+    "tier": "TIER_2",
+    "ats_type": "smartrecruiters",
+    "config": {
+      "company_id": "PublicisSapient"
+    }
+  },
+  {
+    "name": "Visa",
+    "slug": "visa",
+    "domain": "visa.com",
+    "tier": "TIER_2",
+    "ats_type": "smartrecruiters",
+    "config": {
+      "company_id": "Visa"
+    }
+  },
+  {
+    "name": "Siemens",
+    "slug": "siemens",
+    "domain": "siemens.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://jobs.siemens.com"
+    }
+  },
+  {
+    "name": "Philips",
+    "slug": "philips",
+    "domain": "philips.com",
+    "tier": "TIER_2",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "philips",
+      "site": "jobs"
+    }
+  },
+  {
+    "name": "GE Healthcare",
+    "slug": "gehealthcare",
+    "domain": "gehealthcare.com",
+    "tier": "TIER_2",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "gehealthcare",
+      "site": "Careers"
+    }
+  },
+  {
+    "name": "Honeywell",
+    "slug": "honeywell",
+    "domain": "honeywell.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://careers.honeywell.com"
+    }
+  },
+  {
+    "name": "MathWorks",
+    "slug": "mathworks",
+    "domain": "mathworks.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.mathworks.com/careers"
+    }
+  },
+  {
+    "name": "Akamai",
+    "slug": "akamai",
+    "domain": "akamai.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://akamai.wd1.myworkdayjobs.com"
+    }
+  },
+  {
+    "name": "Palo Alto Networks",
+    "slug": "paloaltonetworks",
+    "domain": "paloaltonetworks.com",
+    "tier": "TIER_2",
+    "ats_type": "smartrecruiters",
+    "config": {
+      "company_id": "PaloAltoNetworks"
+    }
+  },
+  {
+    "name": "Fortinet",
+    "slug": "fortinet",
+    "domain": "fortinet.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://jobs.jobvite.com/fortinet"
+    }
+  },
+  {
+    "name": "Ciena",
+    "slug": "ciena",
+    "domain": "ciena.com",
+    "tier": "TIER_2",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "ciena",
+      "site": "Careers"
+    }
+  },
+  {
+    "name": "Synopsys",
+    "slug": "synopsys",
+    "domain": "synopsys.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://synopsys.wd1.myworkdayjobs.com"
+    }
+  },
+  {
+    "name": "Cadence Design Systems",
+    "slug": "cadence",
+    "domain": "cadence.com",
+    "tier": "TIER_2",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "cadence",
+      "site": "External_Careers"
+    }
+  },
+  {
+    "name": "Broadcom",
+    "slug": "broadcom",
+    "domain": "broadcom.com",
+    "tier": "TIER_2",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "broadcom",
+      "site": "External_Career"
+    }
+  },
+  {
+    "name": "Dell Technologies",
+    "slug": "dell",
+    "domain": "dell.com",
+    "tier": "TIER_2",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "dell",
+      "site": "External"
+    }
+  },
+  {
+    "name": "HP Inc",
+    "slug": "hp",
+    "domain": "hp.com",
+    "tier": "TIER_2",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "hp",
+      "site": "ExternalCareers"
+    }
+  },
+  {
+    "name": "VMware",
+    "slug": "vmware",
+    "domain": "vmware.com",
+    "tier": "TIER_2",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "vmware",
+      "site": "VMware"
+    }
+  },
+  {
+    "name": "Citrix",
+    "slug": "citrix",
+    "domain": "citrix.com",
+    "tier": "TIER_2",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "citrix",
+      "site": "CitrixCareers"
+    }
+  },
+  {
+    "name": "NetApp",
+    "slug": "netapp",
+    "domain": "netapp.com",
+    "tier": "TIER_2",
+    "ats_type": "smartrecruiters",
+    "config": {
+      "company_id": "NetApp"
+    }
+  },
+  {
+    "name": "Zoho",
+    "slug": "zoho",
+    "domain": "zoho.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.zoho.com/careers"
+    }
+  },
+  {
+    "name": "Freshworks",
+    "slug": "freshworks",
+    "domain": "freshworks.com",
+    "tier": "TIER_2",
+    "ats_type": "smartrecruiters",
+    "config": {
+      "company_id": "Freshworks"
+    }
+  },
+  {
+    "name": "Amdocs",
+    "slug": "amdocs",
+    "domain": "amdocs.com",
+    "tier": "TIER_2",
+    "ats_type": "smartrecruiters",
+    "config": {
+      "company_id": "Amdocs"
+    }
+  },
+  {
+    "name": "DXC Technology",
+    "slug": "dxc",
+    "domain": "dxc.com",
+    "tier": "TIER_2",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "dxc",
+      "site": "DXC_Jobs"
+    }
+  },
+  {
+    "name": "EPAM Systems",
+    "slug": "epam",
+    "domain": "epam.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.epam.com/careers"
+    }
+  },
+  {
+    "name": "NTT DATA",
+    "slug": "nttdata",
+    "domain": "nttdata.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://careers.services.global.ntt"
+    }
+  },
+  {
+    "name": "CGI",
+    "slug": "cgi",
+    "domain": "cgi.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://cgi.njoyn.com"
+    }
+  },
+  {
+    "name": "Virtusa",
+    "slug": "virtusa",
+    "domain": "virtusa.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.virtusa.com/careers"
+    }
+  },
+  {
+    "name": "Hexaware",
+    "slug": "hexaware",
+    "domain": "hexaware.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://jobs.hexaware.com"
+    }
+  },
+  {
+    "name": "Persistent Systems",
+    "slug": "persistent",
+    "domain": "persistent.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://careers.persistent.com"
+    }
+  },
+  {
+    "name": "Birlasoft",
+    "slug": "birlasoft",
+    "domain": "birlasoft.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.birlasoft.com/careers"
+    }
+  },
+  {
+    "name": "Mphasis",
+    "slug": "mphasis",
+    "domain": "mphasis.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://careers.mphasis.com"
+    }
+  },
+  {
+    "name": "Tata Elxsi",
+    "slug": "tataelxsi",
+    "domain": "tataelxsi.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://tataelxsi.com/careers"
+    }
+  },
+  {
+    "name": "L&T Technology Services",
+    "slug": "ltts",
+    "domain": "ltts.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.ltts.com/careers"
+    }
+  },
+  {
+    "name": "Cyient",
+    "slug": "cyient",
+    "domain": "cyient.com",
+    "tier": "TIER_2",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "cyient",
+      "site": "External"
+    }
+  },
+  {
+    "name": "KPIT Technologies",
+    "slug": "kpit",
+    "domain": "kpit.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.kpit.com/careers"
+    }
+  },
+  {
+    "name": "Sonata Software",
+    "slug": "sonata",
+    "domain": "sonata-software.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.sonata-software.com/careers"
+    }
+  },
+  {
+    "name": "Zensar Technologies",
+    "slug": "zensar",
+    "domain": "zensar.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.zensar.com/careers"
+    }
+  },
+  {
+    "name": "Happiest Minds",
+    "slug": "happiestminds",
+    "domain": "happiestminds.com",
+    "tier": "TIER_2",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.happiestminds.com/careers"
+    }
+  },
+  {
+    "name": "Affirm",
+    "slug": "affirm",
+    "domain": "affirm.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "affirm"
+    }
+  },
+  {
+    "name": "Brex",
+    "slug": "brex",
+    "domain": "brex.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "brex"
+    }
+  },
+  {
+    "name": "Ramp",
+    "slug": "ramp",
+    "domain": "ramp.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "ramp"
+    }
+  },
+  {
+    "name": "Notion",
+    "slug": "notion",
+    "domain": "notion.so",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "notion"
+    }
+  },
+  {
+    "name": "Grammarly",
+    "slug": "grammarly",
+    "domain": "grammarly.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "grammarly"
+    }
+  },
+  {
+    "name": "Webflow",
+    "slug": "webflow",
+    "domain": "webflow.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "webflow"
+    }
+  },
+  {
+    "name": "Zapier",
+    "slug": "zapier",
+    "domain": "zapier.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "zapier"
+    }
+  },
+  {
+    "name": "Klaviyo",
+    "slug": "klaviyo",
+    "domain": "klaviyo.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "klaviyo"
+    }
+  },
+  {
+    "name": "Gusto",
+    "slug": "gusto",
+    "domain": "gusto.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "gusto"
+    }
+  },
+  {
+    "name": "Checkr",
+    "slug": "checkr",
+    "domain": "checkr.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "checkr"
+    }
+  },
+  {
+    "name": "Sumo Logic",
+    "slug": "sumologic",
+    "domain": "sumologic.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "sumologic"
+    }
+  },
+  {
+    "name": "Sentry",
+    "slug": "sentry",
+    "domain": "sentry.io",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "sentry"
+    }
+  },
+  {
+    "name": "LaunchDarkly",
+    "slug": "launchdarkly",
+    "domain": "launchdarkly.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "launchdarkly"
+    }
+  },
+  {
+    "name": "PagerDuty",
+    "slug": "pagerduty",
+    "domain": "pagerduty.com",
+    "tier": "TIER_2",
+    "ats_type": "greenhouse",
+    "config": {
+      "board_token": "pagerduty"
+    }
+  },
+  {
+    "name": "Tata Consultancy Services",
+    "slug": "tcs",
+    "domain": "tcs.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.tcs.com/careers"
+    }
+  },
+  {
+    "name": "Infosys",
+    "slug": "infosys",
+    "domain": "infosys.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://career.infosys.com"
+    }
+  },
+  {
+    "name": "Wipro",
+    "slug": "wipro",
+    "domain": "wipro.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://careers.wipro.com"
+    }
+  },
+  {
+    "name": "HCLTech",
+    "slug": "hcltech",
+    "domain": "hcltech.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.hcltech.com/careers"
+    }
+  },
+  {
+    "name": "Cognizant",
+    "slug": "cognizant",
+    "domain": "cognizant.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://careers.cognizant.com"
+    }
+  },
+  {
+    "name": "Accenture India",
+    "slug": "accenture",
+    "domain": "accenture.com",
+    "tier": "TIER_3",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "accenture",
+      "site": "Accenture_Careers"
+    }
+  },
+  {
+    "name": "Capgemini India",
+    "slug": "capgemini",
+    "domain": "capgemini.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.capgemini.com/careers"
+    }
+  },
+  {
+    "name": "Tech Mahindra",
+    "slug": "techmahindra",
+    "domain": "techmahindra.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://careers.techmahindra.com"
+    }
+  },
+  {
+    "name": "LTIMindtree",
+    "slug": "ltimindtree",
+    "domain": "ltimindtree.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://careers.ltimindtree.com"
+    }
+  },
+  {
+    "name": "IBM India",
+    "slug": "ibm",
+    "domain": "ibm.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.ibm.com/careers"
+    }
+  },
+  {
+    "name": "Dell Services",
+    "slug": "dellservices",
+    "domain": "dell.com",
+    "tier": "TIER_3",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "dell",
+      "site": "External"
+    }
+  },
+  {
+    "name": "Genpact",
+    "slug": "genpact",
+    "domain": "genpact.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://genpact.com/careers"
+    }
+  },
+  {
+    "name": "EXL Service",
+    "slug": "exl",
+    "domain": "exlservice.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.exlservice.com/careers"
+    }
+  },
+  {
+    "name": "WNS Global",
+    "slug": "wns",
+    "domain": "wns.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.wns.com/careers"
+    }
+  },
+  {
+    "name": "Mu Sigma",
+    "slug": "musigma",
+    "domain": "mu-sigma.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.mu-sigma.com/careers"
+    }
+  },
+  {
+    "name": "Fractal Analytics",
+    "slug": "fractal",
+    "domain": "fractal.ai",
+    "tier": "TIER_3",
+    "ats_type": "lever",
+    "config": {
+      "site": "fractal"
+    }
+  },
+  {
+    "name": "Tiger Analytics",
+    "slug": "tigeranalytics",
+    "domain": "tigeranalytics.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.tigeranalytics.com/careers"
+    }
+  },
+  {
+    "name": "LatentView Analytics",
+    "slug": "latentview",
+    "domain": "latentview.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.latentview.com/careers"
+    }
+  },
+  {
+    "name": "ITC Infotech",
+    "slug": "itcinfotech",
+    "domain": "itcinfotech.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.itcinfotech.com/careers"
+    }
+  },
+  {
+    "name": "Mindgate Solutions",
+    "slug": "mindgate",
+    "domain": "mindgate.in",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.mindgate.solutions/careers"
+    }
+  },
+  {
+    "name": "Nucleus Software",
+    "slug": "nucleus",
+    "domain": "nucleussoftware.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.nucleussoftware.com/careers"
+    }
+  },
+  {
+    "name": "Intellect Design Arena",
+    "slug": "intellect",
+    "domain": "intellectdesign.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.intellectdesign.com/careers"
+    }
+  },
+  {
+    "name": "Subex",
+    "slug": "subex",
+    "domain": "subex.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.subex.com/careers"
+    }
+  },
+  {
+    "name": "Sasken Technologies",
+    "slug": "sasken",
+    "domain": "sasken.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.sasken.com/careers"
+    }
+  },
+  {
+    "name": "Tata Technologies",
+    "slug": "tatatechnologies",
+    "domain": "tatatechnologies.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.tatatechnologies.com/careers"
+    }
+  },
+  {
+    "name": "Quest Global",
+    "slug": "questglobal",
+    "domain": "quest-global.com",
+    "tier": "TIER_3",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "questglobal",
+      "site": "Careers"
+    }
+  },
+  {
+    "name": "Altran / Capgemini Eng",
+    "slug": "altran",
+    "domain": "capgemini.com",
+    "tier": "TIER_3",
+    "ats_type": "smartrecruiters",
+    "config": {
+      "company_id": "Capgemini"
+    }
+  },
+  {
+    "name": "Coforge",
+    "slug": "coforge",
+    "domain": "coforge.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.coforge.com/careers"
+    }
+  },
+  {
+    "name": "Apexon",
+    "slug": "apexon",
+    "domain": "apexon.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.apexon.com/careers"
+    }
+  },
+  {
+    "name": "Incedo",
+    "slug": "incedo",
+    "domain": "incedoinc.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.incedoinc.com/careers"
+    }
+  },
+  {
+    "name": "Nagarro",
+    "slug": "nagarro",
+    "domain": "nagarro.com",
+    "tier": "TIER_3",
+    "ats_type": "smartrecruiters",
+    "config": {
+      "company_id": "Nagarro"
+    }
+  },
+  {
+    "name": "UST",
+    "slug": "ust",
+    "domain": "ust.com",
+    "tier": "TIER_3",
+    "ats_type": "workday",
+    "config": {
+      "tenant": "ust",
+      "site": "UST"
+    }
+  },
+  {
+    "name": "Microland",
+    "slug": "microland",
+    "domain": "microland.com",
+    "tier": "TIER_3",
+    "ats_type": "official",
+    "config": {
+      "base_url": "https://www.microland.com/careers"
+    }
+  }
+]

@@ -1,0 +1,30 @@
+# FreshersDaily Ranking Engine Weights & Constraints
+# All weights are normalized to sum to 1.0 or used in weighted multi-objective scoring.
+
+weights:
+  fresher_explicitness: 0.30      # Explicit batch ("2026", "2027", "2028"), new grad, campus label
+  trust_score: 0.20               # Pipeline trust score (0-100 normalized to 0-1)
+  company_tier: 0.15              # Tier 1 (Product/FAANG/Unicorn), Tier 2 (Startup/Scaleup), Tier 3 (IT Services)
+  pay_transparency: 0.10          # Explicit stipend/CTC range present with evidence
+  freshness: 0.10                 # Days since posted (newer gets higher score)
+  deadline_distance: 0.05         # Optimal deadline window (>= 5 days and <= 45 days away)
+  location_desirability: 0.05     # Major Indian tech hubs (Bengaluru, Hyderabad, Pune, NCR, Remote-India)
+  role_relevance: 0.05            # High confidence core software engineering roles
+
+tier_scores:
+  TIER_1: 1.00                    # Global tech leaders, high-bar product startups, top unicorns
+  TIER_2: 0.75                    # Well-funded scaleups, established product firms
+  TIER_3: 0.50                    # Large IT services & consultancies
+  TIER_OTHER: 0.40                # Unclassified verified tech firms
+
+constraints:
+  max_jobs_per_cohort_per_day: 5
+  max_jobs_per_company_per_day: 2
+  min_distinct_roles_per_cohort: 3
+  min_non_it_service_jobs: 1
+  min_trust_score_for_publish: 80.0
+  review_queue_min_score: 60.0
+
+diversity_penalties:
+  duplicate_role_penalty: 0.08    # Penalty applied if role category already selected
+  duplicate_location_penalty: 0.04 # Slight penalty to encourage geographic spread across Indian hubs

@@ -1,0 +1,782 @@
+[
+  {
+    "id": "2026_ft_1",
+    "title": "Associate Software Engineer 1",
+    "company": "Tech Corp",
+    "location": "Bengaluru, India",
+    "content": "We are looking for fresh engineering graduates for the batch of 2026 passouts. B.Tech / B.E. in Computer Science or IT. Experience: 0-1 years. Stipend/CTC: 9 LPA. Work on scalable backend systems.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2026"
+      ],
+      "role_type": "full_time",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2026_ft_2",
+    "title": "Associate Software Engineer 2",
+    "company": "Tech Corp",
+    "location": "Bengaluru, India",
+    "content": "We are looking for fresh engineering graduates for the batch of 2026 passouts. B.Tech / B.E. in Computer Science or IT. Experience: 0-1 years. Stipend/CTC: 10 LPA. Work on scalable backend systems.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2026"
+      ],
+      "role_type": "full_time",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2026_ft_3",
+    "title": "Associate Software Engineer 3",
+    "company": "Tech Corp",
+    "location": "Bengaluru, India",
+    "content": "We are looking for fresh engineering graduates for the batch of 2026 passouts. B.Tech / B.E. in Computer Science or IT. Experience: 0-1 years. Stipend/CTC: 11 LPA. Work on scalable backend systems.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2026"
+      ],
+      "role_type": "full_time",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2026_ft_4",
+    "title": "Associate Software Engineer 4",
+    "company": "Tech Corp",
+    "location": "Bengaluru, India",
+    "content": "We are looking for fresh engineering graduates for the batch of 2026 passouts. B.Tech / B.E. in Computer Science or IT. Experience: 0-1 years. Stipend/CTC: 12 LPA. Work on scalable backend systems.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2026"
+      ],
+      "role_type": "full_time",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2026_ft_5",
+    "title": "Associate Software Engineer 5",
+    "company": "Tech Corp",
+    "location": "Bengaluru, India",
+    "content": "We are looking for fresh engineering graduates for the batch of 2026 passouts. B.Tech / B.E. in Computer Science or IT. Experience: 0-1 years. Stipend/CTC: 8 LPA. Work on scalable backend systems.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2026"
+      ],
+      "role_type": "full_time",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2026_ft_6",
+    "title": "Associate Software Engineer 6",
+    "company": "Tech Corp",
+    "location": "Bengaluru, India",
+    "content": "We are looking for fresh engineering graduates for the batch of 2026 passouts. B.Tech / B.E. in Computer Science or IT. Experience: 0-1 years. Stipend/CTC: 9 LPA. Work on scalable backend systems.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2026"
+      ],
+      "role_type": "full_time",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2026_ft_7",
+    "title": "Associate Software Engineer 7",
+    "company": "Tech Corp",
+    "location": "Bengaluru, India",
+    "content": "We are looking for fresh engineering graduates for the batch of 2026 passouts. B.Tech / B.E. in Computer Science or IT. Experience: 0-1 years. Stipend/CTC: 10 LPA. Work on scalable backend systems.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2026"
+      ],
+      "role_type": "full_time",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2026_ft_8",
+    "title": "Associate Software Engineer 8",
+    "company": "Tech Corp",
+    "location": "Bengaluru, India",
+    "content": "We are looking for fresh engineering graduates for the batch of 2026 passouts. B.Tech / B.E. in Computer Science or IT. Experience: 0-1 years. Stipend/CTC: 11 LPA. Work on scalable backend systems.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2026"
+      ],
+      "role_type": "full_time",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2026_ft_9",
+    "title": "Associate Software Engineer 9",
+    "company": "Tech Corp",
+    "location": "Bengaluru, India",
+    "content": "We are looking for fresh engineering graduates for the batch of 2026 passouts. B.Tech / B.E. in Computer Science or IT. Experience: 0-1 years. Stipend/CTC: 12 LPA. Work on scalable backend systems.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2026"
+      ],
+      "role_type": "full_time",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2026_ft_10",
+    "title": "Associate Software Engineer 10",
+    "company": "Tech Corp",
+    "location": "Bengaluru, India",
+    "content": "We are looking for fresh engineering graduates for the batch of 2026 passouts. B.Tech / B.E. in Computer Science or IT. Experience: 0-1 years. Stipend/CTC: 8 LPA. Work on scalable backend systems.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2026"
+      ],
+      "role_type": "full_time",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2026_ft_11",
+    "title": "Associate Software Engineer 11",
+    "company": "Tech Corp",
+    "location": "Bengaluru, India",
+    "content": "We are looking for fresh engineering graduates for the batch of 2026 passouts. B.Tech / B.E. in Computer Science or IT. Experience: 0-1 years. Stipend/CTC: 9 LPA. Work on scalable backend systems.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2026"
+      ],
+      "role_type": "full_time",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2026_ft_12",
+    "title": "Associate Software Engineer 12",
+    "company": "Tech Corp",
+    "location": "Bengaluru, India",
+    "content": "We are looking for fresh engineering graduates for the batch of 2026 passouts. B.Tech / B.E. in Computer Science or IT. Experience: 0-1 years. Stipend/CTC: 10 LPA. Work on scalable backend systems.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2026"
+      ],
+      "role_type": "full_time",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2026_ft_13",
+    "title": "Associate Software Engineer 13",
+    "company": "Tech Corp",
+    "location": "Bengaluru, India",
+    "content": "We are looking for fresh engineering graduates for the batch of 2026 passouts. B.Tech / B.E. in Computer Science or IT. Experience: 0-1 years. Stipend/CTC: 11 LPA. Work on scalable backend systems.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2026"
+      ],
+      "role_type": "full_time",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2026_ft_14",
+    "title": "Associate Software Engineer 14",
+    "company": "Tech Corp",
+    "location": "Bengaluru, India",
+    "content": "We are looking for fresh engineering graduates for the batch of 2026 passouts. B.Tech / B.E. in Computer Science or IT. Experience: 0-1 years. Stipend/CTC: 12 LPA. Work on scalable backend systems.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2026"
+      ],
+      "role_type": "full_time",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2026_ft_15",
+    "title": "Associate Software Engineer 15",
+    "company": "Tech Corp",
+    "location": "Bengaluru, India",
+    "content": "We are looking for fresh engineering graduates for the batch of 2026 passouts. B.Tech / B.E. in Computer Science or IT. Experience: 0-1 years. Stipend/CTC: 8 LPA. Work on scalable backend systems.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2026"
+      ],
+      "role_type": "full_time",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2027_ppo_1",
+    "title": "Software Engineer Intern (6-Month + PPO) 1",
+    "company": "Fintech Solutions",
+    "location": "Hyderabad, Telangana",
+    "content": "Applications open for graduating in 2027 (final year students). 6-month internship with pre-placement offer (PPO) based on performance. B.E/B.Tech in CSE, ECE, EEE. Stipend: 31k pm.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2027"
+      ],
+      "role_type": "internship_ppo",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2027_ppo_2",
+    "title": "Software Engineer Intern (6-Month + PPO) 2",
+    "company": "Fintech Solutions",
+    "location": "Hyderabad, Telangana",
+    "content": "Applications open for graduating in 2027 (final year students). 6-month internship with pre-placement offer (PPO) based on performance. B.E/B.Tech in CSE, ECE, EEE. Stipend: 32k pm.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2027"
+      ],
+      "role_type": "internship_ppo",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2027_ppo_3",
+    "title": "Software Engineer Intern (6-Month + PPO) 3",
+    "company": "Fintech Solutions",
+    "location": "Hyderabad, Telangana",
+    "content": "Applications open for graduating in 2027 (final year students). 6-month internship with pre-placement offer (PPO) based on performance. B.E/B.Tech in CSE, ECE, EEE. Stipend: 33k pm.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2027"
+      ],
+      "role_type": "internship_ppo",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2027_ppo_4",
+    "title": "Software Engineer Intern (6-Month + PPO) 4",
+    "company": "Fintech Solutions",
+    "location": "Hyderabad, Telangana",
+    "content": "Applications open for graduating in 2027 (final year students). 6-month internship with pre-placement offer (PPO) based on performance. B.E/B.Tech in CSE, ECE, EEE. Stipend: 34k pm.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2027"
+      ],
+      "role_type": "internship_ppo",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2027_ppo_5",
+    "title": "Software Engineer Intern (6-Month + PPO) 5",
+    "company": "Fintech Solutions",
+    "location": "Hyderabad, Telangana",
+    "content": "Applications open for graduating in 2027 (final year students). 6-month internship with pre-placement offer (PPO) based on performance. B.E/B.Tech in CSE, ECE, EEE. Stipend: 35k pm.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2027"
+      ],
+      "role_type": "internship_ppo",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2027_ppo_6",
+    "title": "Software Engineer Intern (6-Month + PPO) 6",
+    "company": "Fintech Solutions",
+    "location": "Hyderabad, Telangana",
+    "content": "Applications open for graduating in 2027 (final year students). 6-month internship with pre-placement offer (PPO) based on performance. B.E/B.Tech in CSE, ECE, EEE. Stipend: 36k pm.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2027"
+      ],
+      "role_type": "internship_ppo",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2027_ppo_7",
+    "title": "Software Engineer Intern (6-Month + PPO) 7",
+    "company": "Fintech Solutions",
+    "location": "Hyderabad, Telangana",
+    "content": "Applications open for graduating in 2027 (final year students). 6-month internship with pre-placement offer (PPO) based on performance. B.E/B.Tech in CSE, ECE, EEE. Stipend: 37k pm.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2027"
+      ],
+      "role_type": "internship_ppo",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2027_ppo_8",
+    "title": "Software Engineer Intern (6-Month + PPO) 8",
+    "company": "Fintech Solutions",
+    "location": "Hyderabad, Telangana",
+    "content": "Applications open for graduating in 2027 (final year students). 6-month internship with pre-placement offer (PPO) based on performance. B.E/B.Tech in CSE, ECE, EEE. Stipend: 38k pm.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2027"
+      ],
+      "role_type": "internship_ppo",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2027_ppo_9",
+    "title": "Software Engineer Intern (6-Month + PPO) 9",
+    "company": "Fintech Solutions",
+    "location": "Hyderabad, Telangana",
+    "content": "Applications open for graduating in 2027 (final year students). 6-month internship with pre-placement offer (PPO) based on performance. B.E/B.Tech in CSE, ECE, EEE. Stipend: 39k pm.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2027"
+      ],
+      "role_type": "internship_ppo",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2027_ppo_10",
+    "title": "Software Engineer Intern (6-Month + PPO) 10",
+    "company": "Fintech Solutions",
+    "location": "Hyderabad, Telangana",
+    "content": "Applications open for graduating in 2027 (final year students). 6-month internship with pre-placement offer (PPO) based on performance. B.E/B.Tech in CSE, ECE, EEE. Stipend: 30k pm.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2027"
+      ],
+      "role_type": "internship_ppo",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2027_ppo_11",
+    "title": "Software Engineer Intern (6-Month + PPO) 11",
+    "company": "Fintech Solutions",
+    "location": "Hyderabad, Telangana",
+    "content": "Applications open for graduating in 2027 (final year students). 6-month internship with pre-placement offer (PPO) based on performance. B.E/B.Tech in CSE, ECE, EEE. Stipend: 31k pm.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2027"
+      ],
+      "role_type": "internship_ppo",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2027_ppo_12",
+    "title": "Software Engineer Intern (6-Month + PPO) 12",
+    "company": "Fintech Solutions",
+    "location": "Hyderabad, Telangana",
+    "content": "Applications open for graduating in 2027 (final year students). 6-month internship with pre-placement offer (PPO) based on performance. B.E/B.Tech in CSE, ECE, EEE. Stipend: 32k pm.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2027"
+      ],
+      "role_type": "internship_ppo",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2027_ppo_13",
+    "title": "Software Engineer Intern (6-Month + PPO) 13",
+    "company": "Fintech Solutions",
+    "location": "Hyderabad, Telangana",
+    "content": "Applications open for graduating in 2027 (final year students). 6-month internship with pre-placement offer (PPO) based on performance. B.E/B.Tech in CSE, ECE, EEE. Stipend: 33k pm.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2027"
+      ],
+      "role_type": "internship_ppo",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2027_ppo_14",
+    "title": "Software Engineer Intern (6-Month + PPO) 14",
+    "company": "Fintech Solutions",
+    "location": "Hyderabad, Telangana",
+    "content": "Applications open for graduating in 2027 (final year students). 6-month internship with pre-placement offer (PPO) based on performance. B.E/B.Tech in CSE, ECE, EEE. Stipend: 34k pm.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2027"
+      ],
+      "role_type": "internship_ppo",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2027_ppo_15",
+    "title": "Software Engineer Intern (6-Month + PPO) 15",
+    "company": "Fintech Solutions",
+    "location": "Hyderabad, Telangana",
+    "content": "Applications open for graduating in 2027 (final year students). 6-month internship with pre-placement offer (PPO) based on performance. B.E/B.Tech in CSE, ECE, EEE. Stipend: 35k pm.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2027"
+      ],
+      "role_type": "internship_ppo",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "2028_intern_1",
+    "title": "Summer Engineering Intern 2026 1",
+    "company": "Global Tech",
+    "location": "Pune, India",
+    "content": "Summer internship program for pre-final year engineering students graduating in 2028. Duration: 2 months (May - July). 0 years experience required. Work with mentors on distributed storage.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2028"
+      ],
+      "role_type": "internship",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 0.0
+    }
+  },
+  {
+    "id": "2028_intern_2",
+    "title": "Summer Engineering Intern 2026 2",
+    "company": "Global Tech",
+    "location": "Pune, India",
+    "content": "Summer internship program for pre-final year engineering students graduating in 2028. Duration: 2 months (May - July). 0 years experience required. Work with mentors on distributed storage.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2028"
+      ],
+      "role_type": "internship",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 0.0
+    }
+  },
+  {
+    "id": "2028_intern_3",
+    "title": "Summer Engineering Intern 2026 3",
+    "company": "Global Tech",
+    "location": "Pune, India",
+    "content": "Summer internship program for pre-final year engineering students graduating in 2028. Duration: 2 months (May - July). 0 years experience required. Work with mentors on distributed storage.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2028"
+      ],
+      "role_type": "internship",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 0.0
+    }
+  },
+  {
+    "id": "2028_intern_4",
+    "title": "Summer Engineering Intern 2026 4",
+    "company": "Global Tech",
+    "location": "Pune, India",
+    "content": "Summer internship program for pre-final year engineering students graduating in 2028. Duration: 2 months (May - July). 0 years experience required. Work with mentors on distributed storage.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2028"
+      ],
+      "role_type": "internship",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 0.0
+    }
+  },
+  {
+    "id": "2028_intern_5",
+    "title": "Summer Engineering Intern 2026 5",
+    "company": "Global Tech",
+    "location": "Pune, India",
+    "content": "Summer internship program for pre-final year engineering students graduating in 2028. Duration: 2 months (May - July). 0 years experience required. Work with mentors on distributed storage.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2028"
+      ],
+      "role_type": "internship",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 0.0
+    }
+  },
+  {
+    "id": "2028_intern_6",
+    "title": "Summer Engineering Intern 2026 6",
+    "company": "Global Tech",
+    "location": "Pune, India",
+    "content": "Summer internship program for pre-final year engineering students graduating in 2028. Duration: 2 months (May - July). 0 years experience required. Work with mentors on distributed storage.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2028"
+      ],
+      "role_type": "internship",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 0.0
+    }
+  },
+  {
+    "id": "2028_intern_7",
+    "title": "Summer Engineering Intern 2026 7",
+    "company": "Global Tech",
+    "location": "Pune, India",
+    "content": "Summer internship program for pre-final year engineering students graduating in 2028. Duration: 2 months (May - July). 0 years experience required. Work with mentors on distributed storage.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2028"
+      ],
+      "role_type": "internship",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 0.0
+    }
+  },
+  {
+    "id": "2028_intern_8",
+    "title": "Summer Engineering Intern 2026 8",
+    "company": "Global Tech",
+    "location": "Pune, India",
+    "content": "Summer internship program for pre-final year engineering students graduating in 2028. Duration: 2 months (May - July). 0 years experience required. Work with mentors on distributed storage.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2028"
+      ],
+      "role_type": "internship",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 0.0
+    }
+  },
+  {
+    "id": "2028_intern_9",
+    "title": "Summer Engineering Intern 2026 9",
+    "company": "Global Tech",
+    "location": "Pune, India",
+    "content": "Summer internship program for pre-final year engineering students graduating in 2028. Duration: 2 months (May - July). 0 years experience required. Work with mentors on distributed storage.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2028"
+      ],
+      "role_type": "internship",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 0.0
+    }
+  },
+  {
+    "id": "2028_intern_10",
+    "title": "Summer Engineering Intern 2026 10",
+    "company": "Global Tech",
+    "location": "Pune, India",
+    "content": "Summer internship program for pre-final year engineering students graduating in 2028. Duration: 2 months (May - July). 0 years experience required. Work with mentors on distributed storage.",
+    "ground_truth": {
+      "eligible_batches": [
+        "2028"
+      ],
+      "role_type": "internship",
+      "is_valid": true,
+      "min_exp": 0.0,
+      "max_exp": 0.0
+    }
+  },
+  {
+    "id": "exp_trap_1",
+    "title": "Software Engineer - Platform 1",
+    "company": "Enterprise Software",
+    "location": "Bengaluru, India",
+    "content": "Looking for Software Engineer. Candidate must have minimum 3 to 6 years of hands-on production experience in Java and Kubernetes. Must have led team deliverables.",
+    "ground_truth": {
+      "eligible_batches": [],
+      "role_type": "full_time",
+      "is_valid": false,
+      "min_exp": 3.0,
+      "max_exp": 6.0
+    }
+  },
+  {
+    "id": "exp_trap_2",
+    "title": "Software Engineer - Platform 2",
+    "company": "Enterprise Software",
+    "location": "Bengaluru, India",
+    "content": "Looking for Software Engineer. Candidate must have minimum 3 to 6 years of hands-on production experience in Java and Kubernetes. Must have led team deliverables.",
+    "ground_truth": {
+      "eligible_batches": [],
+      "role_type": "full_time",
+      "is_valid": false,
+      "min_exp": 3.0,
+      "max_exp": 6.0
+    }
+  },
+  {
+    "id": "exp_trap_3",
+    "title": "Software Engineer - Platform 3",
+    "company": "Enterprise Software",
+    "location": "Bengaluru, India",
+    "content": "Looking for Software Engineer. Candidate must have minimum 3 to 6 years of hands-on production experience in Java and Kubernetes. Must have led team deliverables.",
+    "ground_truth": {
+      "eligible_batches": [],
+      "role_type": "full_time",
+      "is_valid": false,
+      "min_exp": 3.0,
+      "max_exp": 6.0
+    }
+  },
+  {
+    "id": "exp_trap_4",
+    "title": "Software Engineer - Platform 4",
+    "company": "Enterprise Software",
+    "location": "Bengaluru, India",
+    "content": "Looking for Software Engineer. Candidate must have minimum 3 to 6 years of hands-on production experience in Java and Kubernetes. Must have led team deliverables.",
+    "ground_truth": {
+      "eligible_batches": [],
+      "role_type": "full_time",
+      "is_valid": false,
+      "min_exp": 3.0,
+      "max_exp": 6.0
+    }
+  },
+  {
+    "id": "scam_1",
+    "title": "Fresher Software Trainee 1",
+    "company": "Quick Career",
+    "location": "Noida, India",
+    "content": "Immediate placement for freshers. Candidate must deposit refundable registration fee of Rs 3,500 for training modules and placement certificate.",
+    "ground_truth": {
+      "eligible_batches": [],
+      "role_type": "full_time",
+      "is_valid": false,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "scam_2",
+    "title": "Fresher Software Trainee 2",
+    "company": "Quick Career",
+    "location": "Noida, India",
+    "content": "Immediate placement for freshers. Candidate must deposit refundable registration fee of Rs 3,500 for training modules and placement certificate.",
+    "ground_truth": {
+      "eligible_batches": [],
+      "role_type": "full_time",
+      "is_valid": false,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "scam_3",
+    "title": "Fresher Software Trainee 3",
+    "company": "Quick Career",
+    "location": "Noida, India",
+    "content": "Immediate placement for freshers. Candidate must deposit refundable registration fee of Rs 3,500 for training modules and placement certificate.",
+    "ground_truth": {
+      "eligible_batches": [],
+      "role_type": "full_time",
+      "is_valid": false,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "non_swe_1",
+    "title": "Business Development Executive",
+    "company": "SalesHub",
+    "location": "Mumbai, India",
+    "content": "Freshers welcome for B2B client acquisition, lead generation, cold calling and field sales.",
+    "ground_truth": {
+      "eligible_batches": [],
+      "role_type": "full_time",
+      "is_valid": false,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "foreign_loc_1",
+    "title": "Junior Software Engineer",
+    "company": "US Software Inc",
+    "location": "Austin, Texas, United States",
+    "content": "Graduating class of 2026. Join our core frontend team in Austin office. Must have US work authorization.",
+    "ground_truth": {
+      "eligible_batches": [],
+      "role_type": "full_time",
+      "is_valid": false,
+      "min_exp": 0.0,
+      "max_exp": 1.0
+    }
+  },
+  {
+    "id": "ambiguous_1",
+    "title": "Senior Staff Architect",
+    "company": "Cloud Systems",
+    "location": "Bengaluru, India",
+    "content": "Requires 12+ years experience in designing high throughput distributed systems.",
+    "ground_truth": {
+      "eligible_batches": [],
+      "role_type": "full_time",
+      "is_valid": false,
+      "min_exp": 12.0,
+      "max_exp": 15.0
+    }
+  }
+]
