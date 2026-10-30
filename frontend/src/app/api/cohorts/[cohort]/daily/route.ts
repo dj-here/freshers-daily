@@ -186,7 +186,7 @@ export async function GET(
         let stipendCtc = row.stipend_ctc;
         let stipendEvidence = row.stipend_ctc_evidence;
 
-        if (verifiedOverride && (applyUrl.includes("jobs/500") || applyUrl.includes("jobs/600") || applyUrl.includes("jobs/700") || applyUrl.includes("atlassian") || applyUrl.includes("browserstack"))) {
+        if (verifiedOverride) {
           companyName = verifiedOverride.company;
           title = verifiedOverride.title;
           applyUrl = verifiedOverride.apply_url;
