@@ -37,7 +37,7 @@ export async function GET(request: NextRequest) {
           WHERE e.cohort = ${c} 
             AND j.status IN ('verified', 'published')
             AND j.id NOT IN (
-              SELECT job_id FROM daily_selections WHERE cohort = ${c} AND selection_date = ${today}
+              SELECT job_id FROM daily_selections WHERE cohort = ${c}
             )
           ORDER BY j.trust_score DESC, j.id ASC
           LIMIT ${5 - Number(existing[0].count)}
