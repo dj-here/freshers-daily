@@ -149,6 +149,20 @@ class JobVerifier:
             report.final_trust_score = 0.0
             return report
 
+        # Stage 1b: Direct Requisition Check (Strictly Rejects Corporate Career Landing Pages)
+        direct_passed, direct_reason = self._check_is_direct_requisition(apply_url)
+        report.add_result(
+            check_name="direct_requisition",
+            passed=direct_passed,
+            score=100.0 if direct_passed else 0.0,
+            reason=direct_reason,
+            evidence=apply_url
+        )
+        if not direct_passed:
+            report.status = "rejected"
+            report.final_trust_score = 0.0
+            return report
+
         # Stage 2: Liveness & Body Closure Check
         fetched_html = raw_html
         if not skip_network_liveness and apply_url.startswith("http"):
@@ -363,3 +377,60 @@ class JobVerifier:
                 return False, f"College tier restriction detected ('{matched_str}'); exclusive to Tier-1 / IIT / NIT.", matched_str
 
         return True, "Open to all accredited universities and Tier-3 engineering colleges", None
+
+    def _check_is_direct_requisition(self, url: str) -> Tuple[bool, str]:
+        url_lower = url.lower().strip()
+        parsed = urlparse(url_lower)
+        path = parsed.path.rstrip("/")
+
+        # Allow verified direct candidate portals (e.g. Zoho)
+        if "candidateportal" in url_lower and "register=true" in url_lower:
+            return True, "Valid direct candidate registration portal"
+
+        # Explicit rejection of generic landing pages and search roots
+        generic_patterns = [
+            r"/careers/?$",
+            r"/careers-home/?$",
+            r"/jobs/?$",
+            r"/jobs/results/?$",
+            r"/students-graduates(?:\.html)?/?$",
+            r"/students-grads/?$",
+            r"searchjobs",
+            r"/candidateportal/?$",
+        ]
+        for gp in generic_patterns:
+            if re.search(gp, url_lower):
+                return False, f"Rejected: generic corporate career landing page or search root ({url}) - direct requisition ID required."
+
+        # ATS direct requisition checks: Greenhouse, Ashby, SmartRecruiters, Lever, Amazon Jobs
+        if "greenhouse.io" in url_lower:
+            if "/jobs/" in url_lower or "gh_jid=" in url_lower:
+                return True, "Valid direct Greenhouse requisition"
+            return False, "Missing Greenhouse job ID in URL"
+
+        if "ashbyhq.com" in url_lower:
+            if re.search(r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}", url_lower):
+                return True, "Valid direct Ashby requisition"
+            return False, "Missing Ashby job UUID in URL"
+
+        if "smartrecruiters.com" in url_lower:
+            if re.search(r"smartrecruiters\.com/[^/]+/\d+", url_lower):
+                return True, "Valid direct SmartRecruiters requisition"
+            return False, "Missing SmartRecruiters job ID in URL"
+
+        if "amazon.jobs" in url_lower:
+            if "/jobs/" in url_lower and re.search(r"/jobs/\d+", url_lower):
+                return True, "Valid direct Amazon Jobs requisition"
+            return False, "Missing Amazon job requisition ID in URL"
+
+        if "lever.co" in url_lower:
+            if re.search(r"lever\.co/[^/]+/[0-9a-f-]{10,}", url_lower):
+                return True, "Valid direct Lever requisition"
+            return False, "Missing Lever posting ID in URL"
+
+        # General URL must have a specific leaf path (not root or generic /careers)
+        parts = [p for p in path.split("/") if p]
+        if len(parts) <= 1 and not parsed.query:
+            return False, f"Rejected: top-level career root URL ({url}) without specific job requisition path."
+
+        return True, "URL matches direct job requisition pattern"
