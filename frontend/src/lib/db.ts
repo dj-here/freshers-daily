@@ -8,5 +8,11 @@ const connectionString =
 // Clean any asyncpg prefixes if passed from python envs
 const cleanConnectionString = connectionString.replace("postgresql+asyncpg://", "postgresql://");
 
-export const sql = neon(cleanConnectionString);
+// Strictly disable Next.js Data Cache for Neon SQL queries to ensure zero stale reads
+export const sql = neon(cleanConnectionString, {
+  fetchOptions: {
+    cache: "no-store",
+  },
+});
+
 export const pool = new Pool({ connectionString: cleanConnectionString });
